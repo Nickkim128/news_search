@@ -1,0 +1,88 @@
+/* Properties of the body*/
+body {
+    background: #FEFFFF;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+/* header colors*/
+  h1, h2, h3, h4, h5, h6 {
+    color: #92EBEA;
+  }
+  
+/* color of the navigation bar*/
+  .bg-steel {
+    background-color: #ffffff;
+  }
+  
+/*properties of the News Search*/
+.news-header .container .navbar-main {
+    color: #92EBEA;
+    font-size: 30px;
+}
+
+/*properties of the Navigation Components*/
+.news-header .navbar-nav .dropdown-content {
+    color: #92EBEA;
+    font-size: 30px;
+}
+  
+.news-header .navbar-nav .nav-compo:hover {
+    color: #92EBEA;
+}
+  
+.news-header .navbar-nav .nav-compo.active {
+    font-weight: 500;
+}
+
+/*Dropdown*/
+.news-header .navbar-nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.news-header .navbar-nav .dropbutton{
+    background-color: #ffffff;
+    color: #92EBEA;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.news-header .navbar-nav .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0);
+    z-index: 1;
+}
+
+.news-header .navbar-nav .dropdown-content a{
+    color: #8dd8d7;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+  
+.news-header .navbar-nav .dropdown-content a:hover{
+    background-color:#def8f5;
+}
+
+.news-header .navbar-nav .dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.news-header .navbar-nav .dropbutton:hover .dropbutton{
+    background-color: #92EBEA;
+}
+
+/* Search Bar */
+.news-header .container .form.sbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
