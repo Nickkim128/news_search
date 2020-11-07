@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,10 +22,10 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="navbarToggle">
 	        <div class="navbar-nav mr-auto">
-                <form id="sbar">
-                    <input type="search" id="query" name="q" placeholder="Search Here!">
-                    <button>Search</button>
-                </form>
+				<form method="POST">
+					<input name="text" placeholder="Search Here...">
+					<input type="submit">
+				</form>
 	        </div>
 	        <!-- Navbar Right Side with the drop down menu for the categories-->
 	        <div class="navbar-nav">
@@ -43,16 +43,7 @@
 	  </nav>
 	</header>
 
-	<dic class = "container">
-		{% for new, des, i in context %}
-		
-		<img src="{{i}}" alt="">
-		<h3>News: </h3> {{new}}
-		<h4>Description: </h4> {{des}}
 
-
-		{% endfor %}
-	</dic>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
