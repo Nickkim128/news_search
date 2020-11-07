@@ -67,27 +67,16 @@ def search(input):
     img_odd = []
     url_odd = []
 
-    desc_even=[]
-    news_even=[]
-    img_even=[]
-    url_even=[]
-
     for i in range(len(articles)):
         mine = articles[i]
-
-        if(i%2 == 1):
-            news_odd.append(mine['title'])
-            desc_odd.append(mine['description'])
-            img_odd.append(mine['urlToImage'])
-            url_odd.append(mine['url'])
-        else:
-            news_even.append(mine['title'])
-            desc_even.append(mine['description'])
-            img_even.append(mine['urlToImage'])
-            url_even.append(mine['url'])
+        news_odd.append(mine['title'])
+        desc_odd.append(mine['description'])
+        img_odd.append(mine['urlToImage'])
+        url_odd.append(mine['url'])
+        
 
     
-    mylist = zip(news_odd, desc_odd, img_odd, url_odd, news_even, desc_even, img_even, url_even)
+    mylist = zip(news_odd, desc_odd, img_odd, url_odd)
 
     return mylist
 
